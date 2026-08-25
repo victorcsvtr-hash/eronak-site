@@ -61,7 +61,7 @@ body {
 }
 
 .logo-img {
-  height: 48px;
+  height: 96px;
   width: auto;
 }
 
@@ -730,7 +730,7 @@ footer {
   }
 
   .logo-img {
-    height: 40px;
+    height: 80px;
   }
 }
 
