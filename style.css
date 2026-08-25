@@ -503,3 +503,158 @@ footer {
 .whatsapp-flutuante svg {
   fill: #fff;
 }
+
+.menu-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 200;
+}
+
+.menu-hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 4%;
+  }
+
+  .topbar .topbar-social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+
+  .nav-links.aberto {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .btn-cotacao {
+    margin: 8px 5% !important;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .slides .slide img {
+    height: 220px;
+  }
+
+  .slide-legenda h3 {
+    font-size: 20px;
+  }
+
+  .slide-legenda p {
+    font-size: 13px;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+
+  .titulo-secao {
+    font-size: 22px;
+  }
+
+  .subtitulo-secao {
+    font-size: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .form-contato {
+    padding: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  footer {
+    padding: 35px 5% 0;
+  }
+
+  .whatsapp-flutuante {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-flutuante svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .slides .slide img {
+    height: 180px;
+  }
+}
