@@ -11,7 +11,7 @@ body {
 }
 
 .topbar {
-  background: #2b522b;
+  background: #027302;
   color: #dfe9df;
   font-size: 13px;
   padding: 8px 5%;
@@ -81,11 +81,11 @@ body {
 
 .nav-links a:hover,
 .nav-links a.ativo {
-  color: #3e7d3e;
+  color: #027302;
 }
 
 .btn-cotacao {
-  background: #3e7d3e;
+  background: #027302;
   color: #fff !important;
   padding: 10px 22px;
   border-radius: 6px;
@@ -94,7 +94,7 @@ body {
 }
 
 .btn-cotacao:hover {
-  background: #2b522b;
+  background: #015c01;
   color: #fff !important;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .seta:hover {
-  background: rgba(62,125,62,0.9);
+  background: rgba(2,115,2,0.9);
 }
 
 .seta.anterior { left: 15px; }
@@ -191,7 +191,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #3e7d3e, #57a057);
+  background: linear-gradient(135deg, #027302, #04a504);
   color: #fff;
   text-align: center;
   padding: 60px 20px;
@@ -211,7 +211,7 @@ body {
 .btn {
   display: inline-block;
   background: #fff;
-  color: #3e7d3e;
+  color: #027302;
   padding: 12px 35px;
   border-radius: 30px;
   text-decoration: none;
@@ -225,7 +225,7 @@ body {
 }
 
 .btn-verde {
-  background: #3e7d3e;
+  background: #027302;
   color: #fff;
 }
 
@@ -259,7 +259,7 @@ section {
 
 .texto-institucional h2,
 .texto-conteudo h2 {
-  color: #3e7d3e;
+  color: #027302;
   margin: 35px 0 12px;
   font-size: 22px;
 }
@@ -280,7 +280,7 @@ section {
   content: '\2714';
   position: absolute;
   left: 5px;
-  color: #3e7d3e;
+  color: #027302;
   font-weight: bold;
 }
 
@@ -302,7 +302,7 @@ section {
   content: '\25B8';
   position: absolute;
   left: 5px;
-  color: #3e7d3e;
+  color: #027302;
 }
 
 .cards {
@@ -364,11 +364,11 @@ section {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #3e7d3e;
+  background: #027302;
 }
 
 .timeline-item h3 {
-  color: #3e7d3e;
+  color: #027302;
 }
 
 .info-contato {
@@ -459,7 +459,7 @@ footer {
 }
 
 .footer-col a:hover {
-  color: #7fc47f;
+  color: #4ade4a;
 }
 
 .footer-redes {
