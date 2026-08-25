@@ -503,6 +503,10 @@ footer {
   fill: #fff;
 }
 
+#politica {
+  display: none;
+}
+
 .menu-hamburger {
   display: none;
   background: none;
