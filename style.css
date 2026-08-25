@@ -527,6 +527,33 @@ footer {
   transition: 0.3s;
 }
 
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .slides .slide img {
+    height: 340px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  .titulo-secao {
+    font-size: 26px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .topbar {
     flex-direction: column;
@@ -555,6 +582,7 @@ footer {
     gap: 0;
     padding: 10px 0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    z-index: 150;
   }
 
   .nav-links.aberto {
@@ -602,6 +630,11 @@ footer {
     font-size: 13px;
   }
 
+  .seta {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
   section {
     padding: 40px 5%;
   }
@@ -612,18 +645,58 @@ footer {
 
   .subtitulo-secao {
     font-size: 14px;
+    margin-bottom: 30px;
   }
 
   .cards {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card-imagem {
+    height: 150px;
+  }
+
+  .beneficios li {
+    padding-left: 28px;
+    font-size: 14px;
+  }
+
+  .beneficios li::before {
+    left: 2px;
   }
 
   .timeline {
     padding-left: 25px;
   }
 
+  .timeline-item::before {
+    left: -34px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-item h3 {
+    font-size: 16px;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+  }
+
   .form-contato {
     padding: 20px;
+    margin: 0 10px;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 16px;
+    padding: 10px;
   }
 
   .footer-grid {
@@ -633,6 +706,15 @@ footer {
 
   footer {
     padding: 35px 5% 0;
+  }
+
+  .footer-col h4 {
+    font-size: 14px;
+  }
+
+  .footer-col p,
+  .footer-col address {
+    font-size: 13px;
   }
 
   .whatsapp-flutuante {
@@ -646,18 +728,106 @@ footer {
     width: 28px;
     height: 28px;
   }
+
+  .logo-img {
+    height: 40px;
+  }
 }
 
 @media (max-width: 480px) {
   .topbar {
     font-size: 11px;
+    padding: 5px 3%;
   }
 
   .hero h1 {
     font-size: 20px;
   }
 
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 30px 12px;
+  }
+
   .slides .slide img {
     height: 180px;
+  }
+
+  .slide-legenda {
+    padding: 30px 15px 18px;
+  }
+
+  .slide-legenda h3 {
+    font-size: 17px;
+  }
+
+  .slide-legenda p {
+    font-size: 12px;
+  }
+
+  .seta {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  section {
+    padding: 30px 4%;
+  }
+
+  .titulo-secao {
+    font-size: 19px;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .texto-institucional {
+    font-size: 14px;
+  }
+
+  .texto-institucional h2 {
+    font-size: 18px;
+  }
+
+  .form-contato {
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+  }
+
+  .campo label {
+    font-size: 13px;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .footer-col a {
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    padding: 14px;
   }
 }
