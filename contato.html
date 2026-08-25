@@ -48,6 +48,7 @@
     <p class="subtitulo-secao">Entre em contato com nossos profissionais e solicite um orçamento sem compromisso.</p>
 
     <form class="form-contato" onsubmit="enviarMensagem(event)">
+      <input type="text" id="website" name="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
       <div class="campo">
         <label for="nome">Nome completo</label>
         <input type="text" id="nome" required placeholder="Digite seu nome">
@@ -118,9 +119,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     emailjs.init('q6a3zJ001ZSanaeS3');
+    const _formLoadedAt = Date.now();
+    let _lastSubmit = 0;
 
     function enviarMensagem(evento) {
       evento.preventDefault();
+
+      if (document.getElementById('website').value) return;
+      if (Date.now() - _formLoadedAt < 3000) { alert('Aguarde um momento e tente novamente.'); return; }
+      if (Date.now() - _lastSubmit < 30000) { alert('Aguarde 30 segundos entre cada envio.'); return; }
+
       const btn = evento.target.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.textContent = 'Enviando...';
@@ -132,6 +140,7 @@
         mensagem: document.getElementById('mensagem').value,
       };
 
+      _lastSubmit = Date.now();
       emailjs.send('service_meb06bj', 'template_qgzcwxk', templateParams)
         .then(() => {
           alert('Obrigado! Sua mensagem foi enviada com sucesso.');
