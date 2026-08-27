@@ -503,10 +503,6 @@ footer {
   fill: #fff;
 }
 
-#politica {
-  display: none;
-}
-
 .menu-hamburger {
   display: none;
   background: none;
@@ -829,5 +825,95 @@ footer {
   .footer-copy {
     font-size: 11px;
     padding: 14px;
+  }
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c2331;
+  color: #ddd;
+  padding: 18px 5%;
+  z-index: 2000;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.cookie-banner.visivel {
+  transform: translateY(0);
+}
+
+.cookie-banner-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cookie-texto h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.cookie-texto p {
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.cookie-texto p a {
+  color: #4ade4a;
+}
+
+.cookie-botoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cookie-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cookie-aceitar {
+  background: #027302;
+  color: #fff;
+}
+
+.cookie-aceitar:hover {
+  background: #015c01;
+}
+
+.cookie-recusar {
+  background: transparent;
+  color: #ddd;
+  border: 1px solid #5a647a;
+}
+
+.cookie-recusar:hover {
+  background: #2a3342;
+}
+
+@media (max-width: 768px) {
+  .cookie-banner-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-btn {
+    width: 100%;
   }
 }
